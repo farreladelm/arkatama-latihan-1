@@ -33,12 +33,14 @@
                 $loop_input = $_GET['loop_input'];            
                 if(strlen($string_input) > 0 && $loop_input > 0){
                     $i = 0;
-
                     while($i < $loop_input) {
                         $i++;
+                        array_push($input_arr, "$string_input $i");
+                    }
+                    foreach($input_arr as $value) {
                         echo "
                         <div class='output'>    
-                        {$string_input} {$i}
+                        $value
                         </div>
                         ";
                     }
@@ -47,6 +49,8 @@
                     "<div class='output last'>  $loop_input merupakan Bilangan Genap</div>"
                     : "<div class='output last'> $loop_input merupakan Bilangan Ganjil</div>";
                 }
+
+                
             }        
         ?>
     </div>

@@ -83,3 +83,10 @@ a {
     text-align: center;
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+}
