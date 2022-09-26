@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background: rgb(242, 242, 242);
+    width: 300px;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+
+form div {
+    padding-block: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form div input {
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: .3rem;
+    margin-top: .3rem;
+    cursor: pointer;
+
+    transition: .5s ease;
+}
+
+form div input:focus {
+    border-color: rgb(84, 208, 204);
+}
+
+.btn {
+    color: #fff;
+    outline: none;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(-90deg, rgb(222, 81, 81),rgb(84, 208, 204));
+    background-size: 200%;
+    margin-top: 1rem;
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background-size: 100%;
+}
+
+.output {
+    width: 300px;
+    padding: 1rem;
+    background: rgb(242, 242, 242);
+    margin-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.last {
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
