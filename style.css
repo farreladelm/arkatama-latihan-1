@@ -85,7 +85,7 @@ a {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     body {
         flex-direction: column;
     }
